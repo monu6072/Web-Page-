@@ -1,0 +1,23 @@
+/* TextSlider.css */
+@keyframes slide {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .slider-container {
+    overflow: hidden;
+    height: 50px; /* Adjust based on your content */
+    position: relative;
+  }
+  
+  .slider-content {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    animation: slide 10s linear infinite;
+  }
+  
